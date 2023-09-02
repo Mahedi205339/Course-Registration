@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PH Tube</title>
+    <link rel="icon" href="logos/Rectangle 14.png">
 
     <!-- daisy ui link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
@@ -13,26 +14,53 @@
 </head>
 
 <body>
+    <!-- navigation  -->
     <nav>
-        <div class="navbar bg-base-100 flex justify-between w-11/12 mx-auto md:mt-6">
+        <div class="navbar bg-base-100 flex justify-between  w-full md:w-11/12 mx-auto md:mt-6">
             <div class="">
                 <a class="btn btn-ghost normal-case text-xl">
-                    <img src="logos/Logo.png" alt="">
+                    <img class="w-24 md:w-44" src="logos/Logo.png">
                 </a>
             </div>
             <div>
-                <button class="bg-gray-300 font-semibold px-4 py-2 rounded-lg">
+                <button
+                    class="bg-gray-300 text-sm md:text-base font-semibold px-2 py-1 md:px-4 md:py-2 rounded-lg hover:bg-white">
                     Sort by view
                 </button>
             </div>
             <div class="">
-                <button class=" text-white bg-red-600 font-bold w-24 h-10 rounded-lg hover:text-red-600 hover:bg-white">
+                <button onclick="handleBlogAns()"
+                    class=" text-white text-sm md:text-base bg-red-600 font-bold px-4 py-2 rounded-lg hover:text-red-600 hover:bg-white">
                     Blog
                 </button>
             </div>
         </div>
     </nav>
+    <!-- tab -->
+    <div id="tab-container" class="tabs tabs-boxed flex justify-center gap-2 md:gap-6 mt-2 md:mt-6">
+        <!-- <a class="tab bg-red-600 text-white ">Tab 1</a>
+        <a class="tab  ">Tab 2</a>
+        <a class="tab">Tab 3</a> -->
+    </div>
+    <div id="card-container"  class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-6 gap-4">
+        <!-- <div class="card w-96 bg-base-100 shadow-xl">
+            <figure><img src="logos/Icon.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <div class="flex gap-2">
+                <img class="w-16" src="member2.png" alt="">
+                <h2 class="card-title">Shoes!</h2>
+              </div>
+              <div class="text-gray-500">
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <p>55k views</p>
+              </div>
 
+            </div> -->
+          </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/blog.js"></script>
 </body>
 
 </html>
